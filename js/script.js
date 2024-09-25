@@ -1260,12 +1260,6 @@
                                 );
                             }, 1000);
 
-                            form.clearForm();
-
-                            if (select.length) {
-                                select.select2("val", "");
-                            }
-
                             form.find("input, select").trigger("blur");
 
                             setTimeout(function () {
@@ -1287,16 +1281,6 @@
                                 );
                             } else {
                                 output.addClass("active success");
-                            }
-                        } else {
-                            if (output.hasClass("snackbars")) {
-                                output.html(
-                                    ' <p class="snackbars-left"><span class="icon icon-xxs mdi mdi-alert-outline text-middle"></span><span>' +
-                                        msg[result] +
-                                        "</span></p>"
-                                );
-                            } else {
-                                output.addClass("active error");
                             }
                         }
                     },
