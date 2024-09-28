@@ -390,13 +390,28 @@
                 <div class="icon form-icon mdi mdi-email-outline text-primary"></div>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-lg-6">
               <div class="form-wrap form-wrap-icon">
-                <select class="form-input" id="contact-message" name="$course" data-constraints="@Required">
+                <input class="form-input" id="contact-phone" type="tel" name="$phone"
+                  data-constraints="@Phone @Required">
+                <label class="form-label" for="contact-phone">Phone</label>
+                <div class="icon form-icon mdi mdi-phone text-primary"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-wrap form-wrap-icon">
+                <select class="form-input" id="select-course" name="$course" data-constraints="@Required">
                   <option value="" disabled selected>Please select a course</option>
                   <option value="12-Week Course">12-Week Bootcamp</option>
                   <option value="1-Day Course">1-Day Workshop</option>
                 </select>
+                <div class="icon form-icon mdi mdi-paw text-primary"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-wrap form-wrap-icon">
+                <label class="form-label rd-input-label" for="contact-message">Message (optional)</label>
+                <textarea class="form-input" id="contact-message" name="$message"></textarea>
                 <div class="icon form-icon mdi mdi-message-outline text-primary"></div>
               </div>
             </div>
